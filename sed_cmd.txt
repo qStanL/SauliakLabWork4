@@ -1,0 +1,4 @@
+sed '3a\<h1>Таблиця автоматично оновлена. Автор - Сауляк Владислав Васильович</h1>' new_example6.html
+sed -E '/^[[:space:]]*$/d' new_example6.html                                   
+sed -E 's/([[:space:]]+)([[:alpha:]]+)([[:space:]]+)\2/\1\2/' new_example6.html                                                
+sed -E 's/(<td>)([[:punct:]]+)(<\/td>)/\1 \3/' new_example6.html
